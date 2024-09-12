@@ -20,6 +20,7 @@ test_dir = "data/pizza_steak_sushi/test"
 # Setup target device
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
+# the if __name__ == '__main__'is for windows, to avoid multiprocessing
 if __name__ == '__main__':
     # Create transforms
     data_transform = transforms.Compose([
