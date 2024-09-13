@@ -58,6 +58,6 @@ if __name__ == '__main__':
                  device=device)
 
     # Save the model with help from utils.py
-    utils.save_model(model=model,
-                     target_dir="models",
-                     model_name="tinyvgg_model.pth")
+    # utils.save_model(model=model,
+    #                  target_dir="models",
+    #                  model_name="tinyvgg_model.pth")
