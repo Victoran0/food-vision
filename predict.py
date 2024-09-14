@@ -74,12 +74,12 @@ def pred_and_plot_image(
 
     # Convert prediction probabilities -> prediction labels
     target_image_pred_label = torch.argmax(target_image_pred_probs, dim=1)
-    print('Label: ', target_image_pred_label)
+    # print('Label: ', target_image_pred_label)
 
     # Plot image with predicted label and probability
     plt.figure()
     plt.imshow(img)
-    # plt.title(
-    #     f"Pred: {class_names[target_image_pred_label]} | Prob: {target_image_pred_probs.max():.3f}"
-    # )
+    plt.title(
+        f"Pred: {class_names[target_image_pred_label]} | Prob: {target_image_pred_probs.max():.3f}"
+    )
     plt.axis(False)
