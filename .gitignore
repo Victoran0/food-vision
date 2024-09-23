@@ -1,3 +1,4 @@
 data
 models
 runs
+demos/foodvision_mini/07_effnetb0_data_20_percent_10_epochs.pth
